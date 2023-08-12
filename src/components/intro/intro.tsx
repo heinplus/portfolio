@@ -28,7 +28,7 @@ export const Intro = ({ className }: IntroProps) => {
                     transition={{ delay: 0.2 }}
                     className={styles.title}
                 >
-                    Hein <span className={styles.title_color}>Htet</span>
+                   <b> Hein <span className={styles.title_color}>Htet</span></b>
                 </motion.h2>
                 <motion.h3
                     initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export const Intro = ({ className }: IntroProps) => {
                     className={styles.subtitle}
                 >
                     {' '}
-                    <span className={styles.subtitle_color}> Front-End Enchanter </span>with Code
+                    <span className={styles.subtitle_color}> <b>Front-End Enchanter</b>  </span>with Code
                     and Creativity
                 </motion.h3>
 
