@@ -1,0 +1,92 @@
+
+
+.logo {
+  color: black;
+  width: 50px;
+  border-radius: 50px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo:active {
+  scale: 0.8;
+}
+
+
+
+
+.links {
+  list-style-type: none;
+  display: flex;
+  gap: 3em;
+  position: relative;
+}
+
+// .link {
+//   margin-bottom: 1rem;
+// }
+
+.link {
+  border-bottom: 3px solid black;
+}
+
+.link:active {
+  animation: bounce 0.3s ease alternate; /* Add bounce animation */
+  transform-origin: center;
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  margin: 0%;
+  padding: 0.2rem 0rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0px;
+  z-index: 50;
+  padding: 5px;
+}
+
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value (transparency) as needed */
+  backdrop-filter: blur(2px);
+}
+
+
+small {
+  color: #000;
+}
+
+
+@media screen and (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    margin: 0% 4%;
+  }
+  .logo {
+    width: 35px;
+    user-select: none;
+    margin: 0;
+  }
+  .logo:hover {
+    scale: 1.1;
+  }
+  .links {
+    margin: 0;
+  }
+}
