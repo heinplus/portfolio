@@ -3,6 +3,9 @@ import styles from './intro.module.scss';
 import { Animation } from '../animation/animation';
 import { Portfolio } from '../portfolio/portfolio';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { useState, useRef } from 'react';
+
 
 export interface IntroProps {
     className?: string;
@@ -13,6 +16,9 @@ export interface IntroProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Intro = ({ className }: IntroProps) => {
+
+
+
     return (
         <div className={classNames(styles.root, className)}>
             <div>
@@ -22,7 +28,7 @@ export const Intro = ({ className }: IntroProps) => {
                     transition={{ delay: 0.2 }}
                     className={styles.title}
                 >
-                    Hein-<span className={styles.title_color}>Htet</span>
+                    Hein<span className={styles.title_color}>Htet</span>
                 </motion.h2>
                 <motion.h3
                     initial={{ opacity: 0, y: 20 }}
@@ -52,7 +58,7 @@ export const Intro = ({ className }: IntroProps) => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1 }}
             >
-                Portfolio 🦠
+                <Link to={'/'} className='btn'>Portfolio</Link>
                 <div className="arrow-wrapper">
                     <div className="arrow"></div>
                 </div>

@@ -1,4 +1,6 @@
+// .root {
 
+// }
 
 .logo {
   color: black;
@@ -23,9 +25,6 @@
   position: relative;
 }
 
-// .link {
-//   margin-bottom: 1rem;
-// }
 
 .link {
   border-bottom: 3px solid black;
@@ -76,7 +75,7 @@ small {
 @media screen and (max-width: 720px) {
   .nav {
     flex-direction: column;
-    margin: 0% 4%;
+    margin: 0%;
   }
   .logo {
     width: 35px;

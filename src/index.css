@@ -21,6 +21,7 @@ a:hover {
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
   box-sizing: border-box;
 }
 
@@ -91,3 +92,12 @@ button:hover .arrow:before {
   right: 0;
 }
 
+
+button .btn {
+  color: var(--secondary-color);
+  
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}

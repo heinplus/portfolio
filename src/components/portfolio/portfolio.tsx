@@ -22,7 +22,7 @@ export interface PortfolioProps {
 export const Portfolio = ({ className }: PortfolioProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles['portfolio-wrapper']}>
+            <div id='port' className={styles['portfolio-wrapper']}>
                 
                 <motion.h3 className={styles.h3}>My Portfolio</motion.h3>
 
