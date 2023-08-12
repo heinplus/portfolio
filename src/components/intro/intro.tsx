@@ -64,6 +64,7 @@ export const Intro = ({ className }: IntroProps) => {
                 </div>
             </motion.button>
 
+
             <Animation />
             <Portfolio />
         </div>
