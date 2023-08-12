@@ -1,4 +1,5 @@
-import React, { useState, useEffect , useContext } from 'react';
+import React from 'react';
+import { useState, useEffect , useContext } from 'react';
 
 import classNames from 'classnames';
 import styles from './navbar.module.scss';
@@ -71,10 +72,10 @@ export const Navbar = ({ className }: NavbarProps) => {
                     <Link to={'/'}><small>Portfolio</small></Link>
                 </li>
                 <li className={styles.link}>
-                    <Link to={'/contact'}><small>Contact</small></Link>
+                    <Link to={'/'}><small>Contact</small></Link>
                 </li>
                 <li className={styles.link}>
-                    <Link to={'/contact'}><small>Tech Stack</small></Link>
+                    <Link to={'/'}><small>Tech Stack</small></Link>
                 </li>
             </ul>
         </div>
