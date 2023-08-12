@@ -92,7 +92,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                     />
                     <div className={styles['visit-portfolio']}>
                         <h4 className={styles.h4}>Project1</h4>
-                        <a href="https://www.apple.com/">
+                        <a href="https://supercell.com/en/">
                             <button>Demo</button>
                         </a>
                     </div>

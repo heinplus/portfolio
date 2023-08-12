@@ -7,7 +7,7 @@
   justify-items: center;
   justify-content: center;
   font-size: 1rem;
-  padding: 2% 10% 0%;
+  padding: 1rem;
 }
 
 .loader {
@@ -99,6 +99,7 @@
 @media screen and (max-width: 767px) {
   .root {
     margin-top: 0.7rem;
+    padding: 0.2rem;
   }
   .title {
     font-size: 2rem;
