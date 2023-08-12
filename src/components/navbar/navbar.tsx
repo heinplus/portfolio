@@ -75,7 +75,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                     <Link to={'/'}><small>Contact</small></Link>
                 </li>
                 <li className={styles.link}>
-                    <Link to={'/'}><small>Tech Stack</small></Link>
+                    <Link to={'/'}><small>Skills</small></Link>
                 </li>
             </ul>
         </div>
