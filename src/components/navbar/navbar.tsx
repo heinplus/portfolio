@@ -6,7 +6,6 @@ import styles from './navbar.module.scss';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/moonnn.jpg';
 import { motion } from 'framer-motion';
-import BackgroundSong from '../../assets/luffyvoice.mp3';
 
 export interface NavbarProps {
     className?: string;
@@ -34,22 +33,10 @@ export const Navbar = ({ className }: NavbarProps) => {
         [styles.scrolled]: isScrolled,
     });
 
-    // BgSong
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audio = new Audio(BackgroundSong);
-
-    const togglePlayback = () => {
-        if (isPlaying) {
-            audio.pause();
-        } else {
-            audio.play();
-        }
-        setIsPlaying(!isPlaying);
-    };
 
     return (
         <div className={classNames(styles.root, className, styles.nav, rootClassName)}>
-            <Link to={'#'} onClick={togglePlayback}>
+            <Link to={'#'}>
                 <motion.img
                     src={Logo}
                     alt="luffyMoonWalk"
