@@ -50,7 +50,7 @@ export const Intro = ({ className }: IntroProps) => {
             </div>
             <p className={styles.p}>
                 {' '}
-                Mastering the Art of Designing Intuitive and Dynamic Web Interfaces for User Delight
+                MMastering the Art of Designing Intuitive and Dynamic Web Interfaces for User Delight
             </p>
 
             <motion.button
