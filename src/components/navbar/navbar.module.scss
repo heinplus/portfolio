@@ -21,13 +21,13 @@
 .links {
   list-style-type: none;
   display: flex;
-  gap: 3em;
+  gap: 3rem;
   position: relative;
 }
 
 
-.link {
-  border-bottom: 3px solid #1d1d1f;
+.link:hover {
+  border-bottom: 2px solid #1d1d1f;
 }
 
 .link:active {
