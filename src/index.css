@@ -32,9 +32,9 @@ h1 {
 
 
 button {
-  --primary-color: #000;
+  --primary-color: #1d1d1f;
   --secondary-color: #fff;
-  --hover-color: #111;
+  --hover-color: #61677A;
   --arrow-width: 10px;
   --arrow-stroke: 2px;
   box-sizing: border-box;

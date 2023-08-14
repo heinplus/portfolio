@@ -21,7 +21,7 @@
 .loader {
   display: block;
   --height-of-loader: 4px;
-  --loader-color: #000;
+  --loader-color: #1d1d1f;
   width: 200px;
   height: var(--height-of-loader);
   border-radius: 30px;
@@ -62,7 +62,7 @@
 
 .span {
   font-weight: 600;
-  color: orange;
+  color: red;
 }
 
 // grid
@@ -92,8 +92,11 @@
   align-items: center;
   align-content: center;
   gap: 12px;
-  flex-direction: row;
+  flex-direction: row;  
 }
+
+
+
 
 .grid-img {
   width: 100%;
