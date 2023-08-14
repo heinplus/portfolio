@@ -33,7 +33,6 @@ export const Navbar = ({ className }: NavbarProps) => {
         [styles.scrolled]: isScrolled,
     });
 
-
     return (
         <div className={classNames(styles.root, className, styles.nav, rootClassName)}>
             <Link to={'#'}>
@@ -47,21 +46,36 @@ export const Navbar = ({ className }: NavbarProps) => {
                 />
             </Link>
             <ul className={styles.links}>
-                <li className={styles.link}>
+                <motion.li
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1.2 }}
+                    transition={{ delay: 0.25 }}
+                    className={styles.link}
+                >
                     <Link to={'/'}>
                         <small>Portfolio</small>
                     </Link>
-                </li>
-                <li className={styles.link}>
+                </motion.li>
+                <motion.li
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1.2 }}
+                    transition={{ delay: 0.25 }}
+                    className={styles.link}
+                >
                     <Link to={'/'}>
                         <small>Contact</small>
                     </Link>
-                </li>
-                <li className={styles.link}>
+                </motion.li>
+                <motion.li
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1.2 }}
+                    transition={{ delay: 0.25 }}
+                    className={styles.link}
+                >
                     <Link to={'/'}>
                         <small>Skills</small>
                     </Link>
-                </li>
+                </motion.li>
             </ul>
         </div>
     );
