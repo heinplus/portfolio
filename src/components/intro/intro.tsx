@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
 
-
 export interface IntroProps {
     className?: string;
 }
@@ -63,6 +62,7 @@ export const Intro = ({ className }: IntroProps) => {
                     <div className="arrow"></div>
                 </div>
             </motion.button>
+
 
 
             <Animation />

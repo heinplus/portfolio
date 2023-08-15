@@ -26,9 +26,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                 
                 <motion.h3 className={styles.h3}>My Portfolio</motion.h3>
 
-                <motion.span
-                 className={styles.loader}
-                ></motion.span>
+    
 
                 <p className={styles.p}>
                     I am a web developer with a passion for creating beautiful and functional
