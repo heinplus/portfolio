@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 import fbIcon from '../../assets/facebookiconn.svg';
-import gmailIcon from '../../assets/gmailiconn.svg';
-import instaIcon from '../../assets/instaicon.svg';
-import telegramIcon from '../../assets/telegramicon.svg';
+import gmailIcon from '../../assets/gm.png';
+import instaIcon from '../../assets/ins.png';
+import telegramIcon from '../../assets/tele.png';
 
 
 export interface PortfolioProps {
