@@ -1,21 +1,22 @@
-import { useState } from 'react';
 import styles from './App.module.scss';
-import { Intro } from './components/intro/intro';
+
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/navbar/navbar';
+import { Skill } from './components/skill/skill';
+import { Home } from './components/home/home';
 
 
 function App() {
-    const [count, setCount] = useState(0);
 
     return (
         <div className={styles.App}>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Intro />}></Route>
+                <Route path="/" element={<Home />} />
+                <Route path="/skill" element={<Skill />} />
             </Routes>
         </div>
     );
-}
+}   
 
 export default App;

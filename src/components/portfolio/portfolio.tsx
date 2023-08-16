@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import styles from './portfolio.module.scss';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import fbIcon from '../../assets/facebookiconn.svg';
 import gmailIcon from '../../assets/gmailiconn.svg';
@@ -23,10 +24,9 @@ export const Portfolio = ({ className }: PortfolioProps) => {
 
             <div id='port' className={styles['portfolio-wrapper']}>
 
-
                 <motion.h3 className={styles.h3}>Projects</motion.h3>
 
-                <p className={styles.p}>Presenting my projects — web creations that tell stories through clean aesthetics and user-friendly interfaces</p>
+                <p className={styles.p}>Presenting my projects — web creations that tell stories through clean and user-friendly interfaces</p>
             </div>
 
             {/* Grid */}
@@ -78,8 +78,8 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                 <hr></hr>
 
             {/* social */}            
-            <div className={styles.socials}>
-                <h2>Get In Touch</h2>
+            <div className={styles.socials} id='port'>
+                <h2 >Get In Touch</h2>
 
                 <p>I'm  currently looking for opportunities. Whether it's a Full-time Job or a Freelance work. 
                 <br />Send me a message , I'll try to get back to you as soon as possible.</p>

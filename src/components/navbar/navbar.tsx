@@ -36,7 +36,7 @@ export const Navbar = ({ className }: NavbarProps) => {
 
     return (
         <div className={classNames(styles.root, className, styles.nav, rootClassName)}>
-            <Link to={'#'}>
+            <Link to='/'>
                 <motion.img
                     src={Logo}
                     alt="luffyMoonWalk"
@@ -53,7 +53,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                     transition={{ delay: 0.25 }}
                     className={styles.link}
                 >
-                    <Link to={'/'} className={styles.smlink}>
+                    <Link to='/' className={styles.smlink}>
                         Portfolio
                     </Link>
                 </motion.li>
@@ -73,7 +73,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                     transition={{ delay: 0.25 }}
                     className={styles.link}
                 >
-                    <Link to={'/skill'} className={styles.smlink}>
+                    <Link to='/skill' className={styles.smlink}>
                         Skills
                     </Link>
                 </motion.li>

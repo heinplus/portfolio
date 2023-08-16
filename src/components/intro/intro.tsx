@@ -5,6 +5,7 @@ import { Portfolio } from '../portfolio/portfolio';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
+import { Skill } from '../skill/skill';
 
 export interface IntroProps {
     className?: string;
@@ -47,17 +48,14 @@ export const Intro = ({ className }: IntroProps) => {
                     className={styles.loader}
                 ></motion.span>
             </div>
-            <p className={styles.p}>
-                {' '}
-                Mastering the Art of Designing Intuitive and Dynamic Web Interfaces for User Delight
-            </p>
 
             <motion.button
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1 }}
+                className={styles.btnarrow}
             >
-                <Link to={'/'} className='btn'>Portfolio</Link>
+                <Link to='port' className='btn'>Portfolio</Link>
                 <div className="arrow-wrapper">
                     <div className="arrow"></div>
                 </div>
@@ -66,7 +64,7 @@ export const Intro = ({ className }: IntroProps) => {
 
 
             <Animation />
-            <Portfolio />
+            {/* <Portfolio /> */}
         </div>
     );
 };
