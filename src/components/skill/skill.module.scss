@@ -1,0 +1,24 @@
+// .root {
+//     font-family: Arial, Helvetica, sans-serif;
+//     display: block;
+//     justify-content: start;
+//     padding: 2rem 0rem;
+//     gap: 2em;
+//   }
+
+  .root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 200px auto;
+}
+
+.box {
+    width: 600px;
+}

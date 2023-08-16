@@ -11,12 +11,8 @@ export interface IntroProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
-export const Intro = ({ className }: IntroProps) => {
 
+export const Intro = ({ className }: IntroProps) => {
 
 
     return (
@@ -55,7 +51,7 @@ export const Intro = ({ className }: IntroProps) => {
                 transition={{ delay: 0.1 }}
                 className={styles.btnarrow}
             >
-                <Link to='port' className='btn'>Portfolio</Link>
+                <Link to={'/'} className='btn'>Portfolio</Link>
                 <div className="arrow-wrapper">
                     <div className="arrow"></div>
                 </div>

@@ -278,3 +278,20 @@ p {
 }
 
 
+
+
+
+@media screen and (max-width: 720px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .grid-item {
+    padding-left:  0.8rem;
+    padding-right:  0.8rem;
+    padding-top: 1rem;
+    margin: 0;
+  }
+}
+
