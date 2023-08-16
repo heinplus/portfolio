@@ -53,8 +53,8 @@ export const Navbar = ({ className }: NavbarProps) => {
                     transition={{ delay: 0.25 }}
                     className={styles.link}
                 >
-                    <Link to={'/'}>
-                        <small>Portfolio</small>
+                    <Link to={'/'} className={styles.smlink}>
+                        Portfolio
                     </Link>
                 </motion.li>
                 <motion.li
@@ -73,8 +73,8 @@ export const Navbar = ({ className }: NavbarProps) => {
                     transition={{ delay: 0.25 }}
                     className={styles.link}
                 >
-                    <Link to={'/skill'}>
-                        <small>Skills</small>
+                    <Link to={'/skill'} className={styles.smlink}>
+                        Skills
                     </Link>
                 </motion.li>
             </ul>

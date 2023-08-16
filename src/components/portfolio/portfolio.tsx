@@ -39,7 +39,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                     />
                     <div className={styles['visit-portfolio']}>
                         <h4 className={styles.h4}>Fortnite</h4>
-                        <a href="#">
+                        <a href="/">
                             <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
                         </a>
                     </div>
@@ -92,7 +92,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                     <a className={styles.social_link} href="https://t.me/+959972997270">
                         <img src={telegramIcon} alt="" />
                     </a>
-                    <a className={styles.social_link} href="#">
+                    <a className={styles.social_link} href="<3, [8/16/2023 3:12 PM]Hein Htet, [8/16/2023 3:15 PM]https://instagram.com/heinhtet.ie?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
                         <img src={instaIcon} alt="" />
                     </a>
                     <a className={styles.social_link} href="mailto:heinhtetaung.hha.hh@gmail.com">

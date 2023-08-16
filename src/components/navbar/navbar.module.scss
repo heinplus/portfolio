@@ -63,8 +63,13 @@
 }
 
 
-small {
+.smlink {
+  font-size: 0.9rem;
   color: #1d1d1f;
+}
+
+.smlink:hover {
+  color: #1d1d1d;
 }
 
 
