@@ -63,9 +63,9 @@ export const Navbar = ({ className }: NavbarProps) => {
                     transition={{ delay: 0.25 }}
                     className={styles.link}
                 >
-                    <Link to={'/'}>
+                    {/* <Link to={'/contact'}>
                         <small>Contact</small>
-                    </Link>
+                    </Link> */}
                 </motion.li>
                 <motion.li
                     initial={{ opacity: 0, scale: 0 }}

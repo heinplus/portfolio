@@ -26,10 +26,6 @@
 }
 
 
-.link:hover {
-  border-bottom: 2px solid #1d1d1f;
-}
-
 .link:active {
   animation: bounce 0.3s ease alternate; /* Add bounce animation */
   transform-origin: center;
@@ -76,11 +72,13 @@ small {
   .nav {
     flex-direction: column;
     margin: 0%;
+    padding: 1rem;
   }
   .logo {
     width: 35px;
     user-select: none;
     margin: 0;
+    display: none;
   }
   .logo:hover {
     scale: 1.1;

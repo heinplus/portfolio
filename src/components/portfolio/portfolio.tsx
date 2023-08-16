@@ -24,20 +24,14 @@ export interface PortfolioProps {
 export const Portfolio = ({ className }: PortfolioProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <hr></hr>   
+
             <div id='port' className={styles['portfolio-wrapper']}>
-                
+
+
                 <motion.h3 className={styles.h3}>My Projects</motion.h3>
 
-    
-
-                <p className={styles.p}>
-                    I am a web developer with a passion for creating beautiful and functional
-                    websites. I have a strong understanding of
-                    <span className={styles.span}> HTML, CSS, JavaScript </span>, and PHP, and I am
-                    proficient in a variety of back-end frameworks. I am also a
-                    <span className={styles.span}> creative thinker </span> and I am always looking
-                    for new ways to solve problems.
-                </p>
+                <p className={styles.p}>Presenting my projects — web creations that tell stories through clean aesthetics and user-friendly interfaces</p>
             </div>
 
             {/* Grid */}
@@ -49,9 +43,9 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                         className={styles['grid-img']}
                     />
                     <div className={styles['visit-portfolio']}>
-                        <h4 className={styles.h4}>Supercell</h4>
-                        <a href="https://www.apple.com/">
-                            <button>Demo</button>
+                        <h4 className={styles.h4}>Fortnite</h4>
+                        <a href="#">
+                            <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
                         </a>
                     </div>
                 </div>
@@ -63,9 +57,9 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                         className={styles['grid-img']}
                     />
                     <div className={styles['visit-portfolio']}>
-                        <h4 className={styles.h4}>Project1</h4>
-                        <a href="https://www.apple.com/">
-                            <button>Demo</button>
+                        <h4 className={styles.h4}>Supercell</h4>
+                        <a href="/">
+                            <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
                         </a>
                     </div>
                 </div>
@@ -77,36 +71,23 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                         className={styles['grid-img']}
                     />
                     <div className={styles['visit-portfolio']}>
-                        <h4 className={styles.h4}>Project1</h4>
-                        <a href="https://www.apple.com/">
-                            <button>Demo</button>
+                        <h4 className={styles.h4}>Valorant</h4>
+                        <a href="/">
+                            <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
                         </a>
                     </div>
                 </div>
-
-                {/* <div className={styles['grid-item']}>
-                    <img
-                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                        alt=""
-                        className={styles['grid-img']}
-                    />
-                    <div className={styles['visit-portfolio']}>
-                        <h4 className={styles.h4}>Project1</h4>
-                        <a href="https://supercell.com/en/">
-                            <button>Demo</button>
-                        </a>
-                    </div>
-                </div> */}
             </div>
             {/* end grid  */}
 
-                <div className={styles.loader}></div>
+                <hr></hr>
 
             {/* social */}            
             <div className={styles.socials}>
                 <h2>Get In Touch</h2>
 
-                <p>I'm currently looking for opportunities. Whether its a Full-time Job or a Freelance work. Send me a message , I'll try to get back to you as soon as possible.</p>
+                <p>I'm  currently looking for opportunities. Whether it's a Full-time Job or a Freelance work. 
+                <br />Send me a message , I'll try to get back to you as soon as possible.</p>
 
                 <div className={styles.card}>
                     {/* <span>Social</span> */}
@@ -123,6 +104,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                         <img src={gmailIcon} alt="" />
                     </a>
                 </div>
+                <div className={styles.loader}></div>
             </div>
             {/* end social */}
         </div>
