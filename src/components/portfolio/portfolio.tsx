@@ -1,14 +1,8 @@
 import classNames from 'classnames';
 import styles from './portfolio.module.scss';
-import website_1 from '../../assets/supercell.png';
-import website_2 from '../../assets/website-2.jpg';
-import website_3 from '../../assets/website-3.jpg';
-import website_4 from '../../assets/website-4.png';
 import { motion } from 'framer-motion';
 
 import fbIcon from '../../assets/facebookiconn.svg';
-import tiktokIcon from '../../assets/tiktokicon.svg';
-import githubIcon from '../../assets/githubicon.svg';
 import gmailIcon from '../../assets/gmailiconn.svg';
 import instaIcon from '../../assets/instaicon.svg';
 import telegramIcon from '../../assets/telegramicon.svg';
@@ -95,7 +89,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                     <a className={styles.social_link} href="https://www.facebook.com/GloriaXenon/">
                         <img src={fbIcon} alt="" />
                     </a>
-                    <a className={styles.social_link} href="#">
+                    <a className={styles.social_link} href="https://t.me/+959972997270">
                         <img src={telegramIcon} alt="" />
                     </a>
                     <a className={styles.social_link} href="#">
