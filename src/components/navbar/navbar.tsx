@@ -73,7 +73,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                     transition={{ delay: 0.25 }}
                     className={styles.link}
                 >
-                    <Link to={'/'}>
+                    <Link to={'/skill'}>
                         <small>Skills</small>
                     </Link>
                 </motion.li>

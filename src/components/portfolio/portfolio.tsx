@@ -6,10 +6,11 @@ import website_3 from '../../assets/website-3.jpg';
 import website_4 from '../../assets/website-4.png';
 import { motion } from 'framer-motion';
 
-import fbIcon from '../../assets/fb.svg';
+import fbIcon from '../../assets/facebookiconn.svg';
 import tiktokIcon from '../../assets/tiktokicon.svg';
 import githubIcon from '../../assets/githubicon.svg';
-import gmailIcon from '../../assets/gmailicon.svg';
+import gmailIcon from '../../assets/gmailiconn.svg';
+import instaIcon from '../../assets/instaicon.svg';
 import telegramIcon from '../../assets/telegramicon.svg';
 
 
@@ -29,7 +30,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
             <div id='port' className={styles['portfolio-wrapper']}>
 
 
-                <motion.h3 className={styles.h3}>My Projects</motion.h3>
+                <motion.h3 className={styles.h3}>Projects</motion.h3>
 
                 <p className={styles.p}>Presenting my projects — web creations that tell stories through clean aesthetics and user-friendly interfaces</p>
             </div>
@@ -98,7 +99,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                         <img src={telegramIcon} alt="" />
                     </a>
                     <a className={styles.social_link} href="#">
-                        <img src={githubIcon} alt="" />
+                        <img src={instaIcon} alt="" />
                     </a>
                     <a className={styles.social_link} href="mailto:heinhtetaung.hha.hh@gmail.com">
                         <img src={gmailIcon} alt="" />
