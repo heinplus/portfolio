@@ -10,6 +10,8 @@ import fbIcon from '../../assets/fb.svg';
 import tiktokIcon from '../../assets/tiktokicon.svg';
 import githubIcon from '../../assets/githubicon.svg';
 import gmailIcon from '../../assets/gmailicon.svg';
+import telegramIcon from '../../assets/telegramicon.svg';
+
 
 export interface PortfolioProps {
     className?: string;
@@ -24,7 +26,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
         <div className={classNames(styles.root, className)}>
             <div id='port' className={styles['portfolio-wrapper']}>
                 
-                <motion.h3 className={styles.h3}>My Portfolio</motion.h3>
+                <motion.h3 className={styles.h3}>My Projects</motion.h3>
 
     
 
@@ -42,7 +44,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
             <div className={styles.grid}>
                 <div className={styles['grid-item']}>
                     <img
-                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                        src="https://videogames.si.com/.image/t_share/MTkzNDgzNjk3OTgxMjM2NDUy/fortnite-skins.jpg"
                         alt=""
                         className={styles['grid-img']}
                     />
@@ -56,7 +58,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
 
                 <div className={styles['grid-item']}>
                     <img
-                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                        src="https://assetsio.reedpopcdn.com/games-of-the-decade-clash-royale-less-a-game-more-of-a-place-1574524324191.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
                         alt=""
                         className={styles['grid-img']}
                     />
@@ -70,7 +72,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
 
                 <div className={styles['grid-item']}>
                     <img
-                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc04e4637524166dc/621853fd6be1e66143a66db2/022822_TakeoverCap_Banner.jpg?auto=webp&disable=upscale&height=549"
                         alt=""
                         className={styles['grid-img']}
                     />
@@ -82,7 +84,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                     </div>
                 </div>
 
-                <div className={styles['grid-item']}>
+                {/* <div className={styles['grid-item']}>
                     <img
                         src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
                         alt=""
@@ -94,19 +96,25 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                             <button>Demo</button>
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
             {/* end grid  */}
 
-            {/* social */}
+                <div className={styles.loader}></div>
+
+            {/* social */}            
             <div className={styles.socials}>
+                <h2>Get In Touch</h2>
+
+                <p>I'm currently looking for opportunities. Whether its a Full-time Job or a Freelance work. Send me a message , I'll try to get back to you as soon as possible.</p>
+
                 <div className={styles.card}>
                     {/* <span>Social</span> */}
                     <a className={styles.social_link} href="https://www.facebook.com/GloriaXenon/">
                         <img src={fbIcon} alt="" />
                     </a>
                     <a className={styles.social_link} href="#">
-                        <img src={tiktokIcon} alt="" />
+                        <img src={telegramIcon} alt="" />
                     </a>
                     <a className={styles.social_link} href="#">
                         <img src={githubIcon} alt="" />
