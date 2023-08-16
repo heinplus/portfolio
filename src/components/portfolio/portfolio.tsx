@@ -29,7 +29,6 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                 <p className={styles.p}>Presenting my projects — web creations that tell stories through clean and user-friendly interfaces</p>
             </div>
 
-            {/* Grid */}
             <div className={styles.grid}>
                 <div className={styles['grid-item']}>
                     <img
@@ -72,12 +71,54 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                         </a>
                     </div>
                 </div>
+                <div className={styles['grid-item']}>
+                    <img
+                        src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc04e4637524166dc/621853fd6be1e66143a66db2/022822_TakeoverCap_Banner.jpg?auto=webp&disable=upscale&height=549"
+                        alt=""
+                        className={styles['grid-img']}
+                    />
+                    <div className={styles['visit-portfolio']}>
+                        <h4 className={styles.h4}>Valorant</h4>
+                        <a href="/">
+                            <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div className={styles['grid-item']}>
+                    <img
+                        src="https://videogames.si.com/.image/t_share/MTkzNDgzNjk3OTgxMjM2NDUy/fortnite-skins.jpg"
+                        alt=""
+                        className={styles['grid-img']}
+                    />
+                    <div className={styles['visit-portfolio']}>
+                        <h4 className={styles.h4}>Fortnite</h4>
+                        <a href="/">
+                            <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
+                        </a>
+                    </div>
+                </div>
+
+                <div className={styles['grid-item']}>
+                    <img
+                        src="https://assetsio.reedpopcdn.com/games-of-the-decade-clash-royale-less-a-game-more-of-a-place-1574524324191.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+                        alt=""
+                        className={styles['grid-img']}
+                    />
+                    <div className={styles['visit-portfolio']}>
+                        <h4 className={styles.h4}>Supercell</h4>
+                        <a href="/">
+                            <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
+                        </a>
+                    </div>
+                </div>                
+
+                
             </div>
-            {/* end grid  */}
 
                 <hr></hr>
 
-            {/* social */}            
             <div className={styles.socials} id='port'>
                 <h2 >Get In Touch</h2>
 
@@ -101,7 +142,6 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                 </div>
                 <div className={styles.loader}></div>
             </div>
-            {/* end social */}
         </div>
     );
 };
