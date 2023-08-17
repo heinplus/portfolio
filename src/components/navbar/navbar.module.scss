@@ -1,6 +1,6 @@
-// .root {
-
-// }
+.root {
+  box-sizing: border-box;
+}
 
 .logo {
   color: #1d1d1f;
@@ -21,8 +21,11 @@
 .links {
   list-style-type: none;
   display: flex;
-  gap: 3rem;
   position: relative;
+}
+
+.link {
+  margin-right: 2.5rem;
 }
 
 
@@ -47,8 +50,6 @@
   align-items: center;
   justify-content: space-between;
   justify-items: center;
-  margin: 0%;
-  padding: 0.2rem 0rem;
   background-color: #ffffff;
   position: sticky;
   top: 0px;
@@ -89,6 +90,9 @@
     scale: 1.1;
   }
   .links {
+    gap: 6rem;
+  }
+  .link {
     margin: 0;
   }
 }
