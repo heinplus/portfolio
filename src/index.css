@@ -102,3 +102,10 @@ button .btn {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 }
+
+
+@media (max-width: 768px) {
+  button {
+    padding: 1.2em 3em; 
+  }
+}
