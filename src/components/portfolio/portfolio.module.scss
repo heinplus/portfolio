@@ -4,6 +4,7 @@
   justify-content: start;
   padding: 2rem 0rem;
   gap: 2em;
+  height: 100vh;
 }
 
 .portfolio-wrapper {
@@ -257,6 +258,98 @@ p {
   margin: 10px auto;
   background-color: var(--loader-color);
 }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  background-image: linear-gradient(118deg,rgba(255,255,255,0),rgba(255,255,255,0) 27%,rgba(255,255,255,.05) 37%,rgba(255,255,255,0) 45%),linear-gradient(54deg,#000 43%,#001301 64%,#000 80%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  padding-left: 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-text {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  position: relative;
+}
+
+.earth {
+  max-width: 420px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: -430px;
+  right: auto;
+}
+
+.space-men {
+  max-width: 450px;
+  position: absolute;
+  top: -30px;
+  bottom: 0%;
+  right: -410px;
+}
+
+
+h5 {
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Matter,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}   
+
+h2 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Matter,sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.mt-16 {
+  // margin-top: 20px;
+}
+
+
+
+
+.h {
+  height: 100vh;
+}
+
+
+
+
+
+
+
 
 
 @keyframes bounce_613 {

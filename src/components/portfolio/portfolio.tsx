@@ -2,6 +2,9 @@ import classNames from 'classnames';
 import styles from './portfolio.module.scss';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+// import { Link } from 'react-scroll';
+
+
 
 import fbIcon from '../../assets/facebookiconn.svg';
 import gmailIcon from '../../assets/gm.png';
@@ -19,10 +22,9 @@ export interface PortfolioProps {
  */
 export const Portfolio = ({ className }: PortfolioProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
-            <hr></hr>   
+        <div id="portfolio" className={classNames(styles.root, className)}>
 
-            <div id='port' className={styles['portfolio-wrapper']}>
+            <div id='section1' className={styles['portfolio-wrapper']}>
 
                 <motion.h3 className={styles.h3}>Projects</motion.h3>
 
@@ -112,18 +114,17 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                             <button className={styles.btnn}><span className={styles.demo}>Demo</span></button>
                         </a>
                     </div>
-                </div>                
+                </div>
 
-                
             </div>
 
-                <hr></hr>
+            <hr></hr>
 
             <div className={styles.socials} id='port'>
                 <h2 >Get In Touch</h2>
 
-                <p>I'm  currently looking for opportunities. Whether it's a Full-time Job or a Freelance work. 
-                <br />Send me a message , I'll try to get back to you as soon as possible.</p>
+                <p>I'm  currently looking for opportunities. Whether it's a Full-time Job or a Freelance work.
+                    <br />Send me a message , I'll try to get back to you as soon as possible.</p>
 
                 <div className={styles.card}>
                     {/* <span>Social</span> */}
@@ -142,6 +143,32 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                 </div>
                 <div className={styles.loader}></div>
             </div>
+
+
+            
+            <div className={styles['footer']}>
+                <div className={styles['footer-text']}>
+                    <img src="https://uploads-ssl.webflow.com/64470065adf2a67f8abcbb4d/64470065adf2a6e95cbcbb99_planet-earth.png"
+                        className={styles['earth']} alt=""/>
+                    <img src="https://uploads-ssl.webflow.com/64470065adf2a67f8abcbb4d/64470065adf2a60a31bcbbdf_space-men.png"
+                        className={styles['space-men']} alt=""/>
+
+                    <h5 className="heading-2">Have an idea?</h5>
+
+                    <h2 className="heading-3">Let’s talk about it</h2>
+                    
+                    <div className={styles['mt-16']}>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div className={styles['h']}>
+
+            </div>
+
+
         </div>
     );
 };

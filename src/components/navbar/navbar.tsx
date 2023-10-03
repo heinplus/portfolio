@@ -13,30 +13,25 @@ export interface NavbarProps {
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
-    const [isScrolled, setIsScrolled] = useState(false);
 
-    const handleScroll = () => {
-        if (window.scrollY > 0) {
-            setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
-        }
-    };
+    const [scrollToTop, setScrollToTop] = useState(false);
 
+    // Add a useEffect hook to handle scrolling when scrollToTop changes
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+      if (scrollToTop) {
+        // Scroll to the top of the page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // After scrolling, reset the scrollToTop state
+        setScrollToTop(false);
+      }
+    }, [scrollToTop]);
+  
 
-    const rootClassName = classNames(styles.root, className, {
-        [styles.scrolled]: isScrolled,
-    });
 
     return (
-        <div className={classNames(styles.root, className, styles.nav, rootClassName)}>
-            <Link to='/'>
+        <div className={classNames(styles.root, className, styles.nav)}>
+            <Link to='/' onClick={() => setScrollToTop(true)}>
                 <motion.img
                     src={Logo}
                     alt="luffyMoonWalk"
