@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 // import { Link } from 'react-router-dom';
 import { Link, Element } from 'react-scroll';
 
-import { animateScroll as scroll } from 'react-scroll';
 
 import { useState, useRef } from 'react';
 import { Skill } from '../skill/skill';

@@ -18,7 +18,10 @@ export const Animation = ({ className }: AnimationProps) => {
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.7, duration: 0.3 }}
+                transition={{ delay: 0.7, duration: 0.3 }
+            }
+
+            className={styles.ani}
             >
                 <Lottie animationData={animation} />
             </motion.div>
